@@ -9,7 +9,7 @@ const runMigrate = async () => {
     throw new Error("DATABASE_URL is not defined");
   }
 
-  const sqlite = new Database("sqlite.db");
+  const sqlite = new Database(env.DATABASE_URL);
   const db: BetterSQLite3Database = drizzle(sqlite);
 
   console.log("⏳ Running migrations...");
