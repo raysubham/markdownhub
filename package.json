@@ -16,8 +16,8 @@
     "db:push": "drizzle-kit push:sqlite",
     "db:studio": "drizzle-kit studio --host localhost --port 4000",
     "db:check": "drizzle-kit check:sqlite",
-    "format": "prettier --write \"**/*.{js,ts,tsx,md,json}\" --ignore-path .gitignore",
-    "format:check": "prettier --check \"**/*.{js,ts,tsx,md,json}\" --ignore-path .gitignore"
+    "format": "prettier --write \"**/*.{js,ts,tsx,md,json,mjs}\" --ignore-path .gitignore",
+    "format:check": "prettier --check \"**/*.{js,ts,tsx,md,json,mjs}\" --ignore-path .gitignore"
   },
   "dependencies": {
     "@auth/core": "^0.16.0",
