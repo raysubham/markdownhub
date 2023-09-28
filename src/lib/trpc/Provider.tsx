@@ -14,9 +14,9 @@ export default function TrpcProvider({ children }: { children: React.ReactNode }
       transformer: SuperJSON,
       links: [
         httpBatchLink({
-          url: getUrl(),
-        }),
-      ],
+          url: getUrl()
+        })
+      ]
     })
   );
   return (

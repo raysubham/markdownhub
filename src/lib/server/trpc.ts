@@ -18,10 +18,10 @@ const t = initTRPC.context<Context>().create({
         zodError:
           error.code === "BAD_REQUEST" && error.cause instanceof ZodError
             ? error.cause.flatten()
-            : null,
-      },
+            : null
+      }
     };
-  },
+  }
 });
 /**
  * Export reusable router and procedure helpers

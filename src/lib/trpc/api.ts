@@ -15,7 +15,7 @@ export const api = createTRPCNextAppDirServer<typeof appRouter>({
       transformer: SuperJSON,
       links: [
         loggerLink({
-          enabled: (op) => true,
+          enabled: op => true
         }),
         nextCacheLink({
           revalidate: 1,
@@ -26,12 +26,12 @@ export const api = createTRPCNextAppDirServer<typeof appRouter>({
               session,
               headers: {
                 cookie: cookies().toString(),
-                "x-trpc-source": "rsc-invoke",
-              },
+                "x-trpc-source": "rsc-invoke"
+              }
             };
-          },
-        }),
-      ],
+          }
+        })
+      ]
     };
-  },
+  }
 });
