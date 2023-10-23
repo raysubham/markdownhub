@@ -1,5 +1,12 @@
-import SignIn from "@/app/_components/auth/SignIn";
+import { SignIn } from "@/app/_components/auth/SignIn";
+import { getServerAuthSession } from "@/server/auth";
 
-export default function Home() {
-  return <SignIn />;
+export default async function Home() {
+  const session = await getServerAuthSession();
+
+  return (
+    <>
+      <SignIn session={session} />
+    </>
+  );
 }

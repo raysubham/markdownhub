@@ -1,7 +1,7 @@
-import "./globals.css";
+import "./index.css";
 import { Inter } from "next/font/google";
-import NextAuthProvider from "@/lib/auth/Provider";
-import TrpcProvider from "@/lib/trpc/Provider";
+import { TRPCReactProvider } from "@/trpc/react";
+import { headers } from "next/headers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,9 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <NextAuthProvider>
-          <TrpcProvider>{children}</TrpcProvider>
-        </NextAuthProvider>
+        <TRPCReactProvider headers={headers()}>{children}</TRPCReactProvider>
       </body>
     </html>
   );

@@ -20,7 +20,6 @@
     "format:check": "prettier --check \"**/*.{js,ts,tsx,md,json,mjs}\" --ignore-path .gitignore"
   },
   "dependencies": {
-    "@auth/core": "^0.16.0",
     "@auth/drizzle-adapter": "^0.3.2",
     "@t3-oss/env-nextjs": "^0.6.1",
     "@tanstack/react-query": "^4.35.3",
@@ -33,7 +32,7 @@
     "drizzle-orm": "^0.28.6",
     "drizzle-zod": "^0.5.1",
     "eslint": "8.43.0",
-    "next": "~13.5.3",
+    "next": "^13.5.4",
     "next-auth": "^4.23.1",
     "postcss": "8.4.24",
     "react": "18.2.0",
@@ -48,7 +47,7 @@
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
     "@types/better-sqlite3": "^7.6.5",
-    "eslint-config-next": "~13.5.3",
+    "eslint-config-next": "^13.5.4",
     "dotenv": "^16.3.1",
     "drizzle-kit": "^0.19.13",
     "tsx": "^3.13.0",

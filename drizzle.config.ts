@@ -1,5 +1,5 @@
 import type { Config } from "drizzle-kit";
-import { env } from "@/lib/env.mjs";
+import { env } from "@/env.mjs";
 
 export default {
   schema: "./src/lib/db/schema",
