@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "db:generate": "drizzle-kit generate:sqlite",
-    "db:migrate": "tsx src/lib/db/migrate.ts",
+    "db:migrate": "tsx src/server/db/migrate.ts",
     "db:drop": "drizzle-kit drop",
     "db:pull": "drizzle-kit introspect:sqlite",
     "db:push": "drizzle-kit push:sqlite",
